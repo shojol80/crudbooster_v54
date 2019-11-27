@@ -1,4 +1,4 @@
-<?php namespace crocodicstudio\crudbooster\controllers;
+<?php namespace shojol80\crudbooster\controllers;
 
 use CRUDBooster;
 use Illuminate\Support\Facades\DB;
@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Excel;
 use Illuminate\Support\Facades\PDF;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Session;
-use crocodicstudio\crudbooster\fonts\Fontawesome;
+use shojol80\crudbooster\fonts\Fontawesome;
 
 class ModulsController extends CBController
 {
@@ -481,7 +481,7 @@ class ModulsController extends CBController
         }
 
         $types = [];
-        foreach (glob(base_path('vendor/crocodicstudio/crudbooster/src/views/default/type_components').'/*', GLOB_ONLYDIR) as $dir) {
+        foreach (glob(base_path('vendor/shojol80/crudbooster/src/views/default/type_components').'/*', GLOB_ONLYDIR) as $dir) {
             $types[] = basename($dir);
         }
 
@@ -491,7 +491,7 @@ class ModulsController extends CBController
     public function getTypeInfo($type = 'text')
     {
         header("Content-Type: application/json");
-        echo file_get_contents(base_path('vendor/crocodicstudio/crudbooster/src/views/default/type_components/'.$type.'/info.json'));
+        echo file_get_contents(base_path('vendor/shojol80/crudbooster/src/views/default/type_components/'.$type.'/info.json'));
     }
 
     public function postStep4()

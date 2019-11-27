@@ -1,4 +1,4 @@
-<?php namespace crocodicstudio\crudbooster\commands;
+<?php namespace shojol80\crudbooster\commands;
 
 use Cache;
 use CRUDBooster;

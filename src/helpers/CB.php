@@ -1,5 +1,5 @@
 <?php 
-namespace crocodicstudio\crudbooster\helpers;
+namespace shojol80\crudbooster\helpers;
 
 use Session;
 use Request;

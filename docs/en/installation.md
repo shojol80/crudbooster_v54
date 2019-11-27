@@ -28,7 +28,7 @@ $ composer require shojol80/crudbooster
 
 2. Add the following class, to "providers" array in the file **config/app.php**
 ```php
-crocodicstudio\crudbooster\CRUDBoosterServiceProvider::class,
+shojol80\crudbooster\CRUDBoosterServiceProvider::class,
 ```
 
 3. Setting the database configuration, open .env file at project root directory

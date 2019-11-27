@@ -30,7 +30,7 @@
     },
     "autoload": {
         "psr-4": {
-          "crocodicstudio\\crudbooster\\": "src/"
+          "shojol80\\crudbooster\\": "src/"
         }
       }
 }
